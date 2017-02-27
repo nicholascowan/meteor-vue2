@@ -1,21 +1,18 @@
 // Libs
-import {Meteor} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import Vue from 'vue';
-import router from '/imports/routes';
-
-import VueTracker from 'vue-meteor-tracker';
-Vue.use(VueTracker);
-
 import VueMeta from 'vue-meta';
-Vue.use(VueMeta)
+import VueTracker from 'vue-meteor-tracker';
+import router from '/imports/routes';
+import App from '/imports/ui/App.vue';
 
-// Home
-import Home from '/imports/ui/Home.vue';
+Vue.use(VueTracker);
+Vue.use(VueMeta);
 
 // App start
 Meteor.startup(() => {
   new Vue({
     router: router.start(),
-    render: h => h(Home),
+    render: h => h(App),
   }).$mount('app');
 });

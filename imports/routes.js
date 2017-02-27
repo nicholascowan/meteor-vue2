@@ -3,7 +3,7 @@ import {Router, nativeScrollBehavior} from 'meteor/akryum:vue-router2';
 
 // Create router instance
 const router = new Router({
-  mode: 'history',
+  mode:           'history',
   scrollBehavior: nativeScrollBehavior,
 });
 
@@ -12,7 +12,7 @@ import NotFound from '/imports/ui/NotFound.vue';
 
 Router.configure(router => {
   router.addRoute({
-    path: '*',
+    path:      '*',
     component: NotFound,
   });
 }, -1);
