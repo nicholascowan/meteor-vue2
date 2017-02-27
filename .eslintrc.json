@@ -1,0 +1,55 @@
+{
+  "plugins": [
+    "html",
+    "meteor",
+    "vue",
+    "jsx-a11y",
+    "promise",
+    "standard"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:meteor/recommended",
+    "vue"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "meteor": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "valid-jsdoc": ["error", {
+      "requireReturn": true,
+      "requireReturnType": true,
+      "requireParamDescription": true,
+      "requireReturnDescription": true
+    }],
+    "require-jsdoc": ["error", {
+        "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": true
+        }
+    }],
+    "space-after-keywords": "off",
+    "keyword-spacing": [
+      2,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "import/extensions": ["off", "never"],
+    "no-shadow": 2
+  },
+  "settings": {
+    "import/resolver": [ "meteor", "meteor/meteor", "meteor/*", "meteor/akryum:vue-router2" ],
+    "import/core-modules": [ "meteor", "meteor/meteor", "meteor/*", "meteor/akryum:vue-router2" ]
+  }
+}

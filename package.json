@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "autosize": "^3.0.20",
     "babel-runtime": "^6.23.0",
     "meteor-node-stubs": "~0.2.4",
     "vue": "^2.1.10",
@@ -12,5 +13,22 @@
     "vue-meteor-tracker": "^1.1.1",
     "vue-router": "^2.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-meteor": "0.0.9",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-meteor": "^4.0.1",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-vue": "^2.0.1",
+    "sass-lint": "^1.10.2"
+  }
 }

@@ -2,8 +2,9 @@
   <div class="home">
     <h1>Welcome {{name}}</h1>
     <p>Create awesome apps with vuejs &amp; meteor! <a href="https://github.com/Akryum/meteor-vue-component">More info</a></p>
-    <img src="/img/vue.png" class="logo"/><img src="/img/meteor.png" class="logo"/>
+
   </div>
+
 </template>
 
 <style scoped>
@@ -20,7 +21,7 @@ img.logo {
 <script>
   export default {
     data: () => ({
-      name: "Home"
+      name: "Test"
     })
   }
 </script>
