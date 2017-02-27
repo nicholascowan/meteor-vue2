@@ -8,10 +8,6 @@
 <script>
 import AppMenu from '/imports/ui/AppMenu.vue'
 
-function x () {
-  return 1
-}
-
 export default {
   components: {
     AppMenu
